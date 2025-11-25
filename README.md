@@ -1,5 +1,4 @@
-Here is a **clean, professional, GitHub-ready `README.md` template** for your project.
-You can directly copy-paste this into your `README.md` file.
+
 
 ---
 
