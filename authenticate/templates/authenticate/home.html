@@ -1,0 +1,39 @@
+{% extends 'authenticate/base.html' %} {% block content %} {% load static %}
+
+
+<link rel="stylesheet" href="{% static 'home.css' %}" />
+<h1 style="color:white;"> Home page</h1>
+
+{% if user.is_authenticated %}
+<p style="color:white;"><i><b>Name: {{user.first_name}} {{ user.last_name}}</b></i></p>
+<p style="color:white;"><i><b>Username: {{user.username}}</b></i></p>
+
+<p style="color:white;"><i><b>Email: {{user.email}}</b></i></p>
+
+{% endif %}
+<br>
+<br>
+<br>
+<br>
+
+<footer style="background-color: #777;
+  padding: auto;
+  margin: 0 auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  hight: 50%;
+  color: white;">
+
+    <p>
+        <h1 style="color:white;"><strong>FOLLOW US</h1></strong></p>
+    <a href="/">
+        <figure><img src="{% static 'img/insta.png' %}" alt="#" width="70" hight="100" />
+            <a href="https://www.linkedin.com/in/priyanka-gupta-ba3a89202"><img src="{% static 'img/linked.png' %}" alt="#" width="100" hight="100" />
+            <a href="mailto:guptapriyanka9936@gmail.com"><img src="{% static 'img/gmail.png' %}" alt="#" width="70" hight="100" /></a>
+            </a>
+    </figure>
+    </figure>
+
+
+    {% endblock %}
+</footer>
